@@ -1,0 +1,10 @@
+init-openrc-+-login---bash---pstree
+            `-login---bash
+init-openrc-+-login---bash---pstree
+            `-login---bash
+init-openrc-+-login---bash---sudo---bash---pstree
+            `-login---bash
+init-openrc-+-login---bash---sudo---bash-+-ex2-+-ex2---ex2
+            |                            |     `-ex2
+            |                            `-pstree
+            `-login---bash
