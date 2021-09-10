@@ -11,7 +11,6 @@ int main() {
     printf("$ ");
     scanf("%s", command);
     system(command);
-    printf("\n");
   }
   return 0;
 }
