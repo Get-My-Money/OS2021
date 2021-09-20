@@ -17,7 +17,6 @@ int main()
     for(int i = 0; i < N; i++){
         printf("Creating thread № %d\n", i);
         pthread_create(&ids[i], NULL, ThreadFunc, (void*)&i);
-        pthread_join(ids[i], NULL);
         printf("Termination of thread № %d \n", i);
         printf("\n");
 	    }

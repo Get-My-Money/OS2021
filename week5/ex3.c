@@ -32,7 +32,7 @@ void *produce(void *argument) {
         ConsAsleep = 0;
         }
 
-	printf("There is race condition occured\n");
+	printf("There is producer working\n");
 	sleep(60);
 	
   	}
