@@ -1,6 +1,6 @@
 #include <pthread.h>
 #include <unistd.h>
-#include<stdbool.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #define N 12
@@ -12,65 +12,71 @@ bool ProdAsleep = 0;
 bool ConsAsleep = 0;
 
 
-void *produce(void *argument) {
+void *produce(void *argument)
+{
 	
 	int i = 0;
 	while (1){
         i++;
+		if(i > 12){
+			i = 1;
+		}
 
-    if (c == N) {
- 		ProdAsleep = 1;
-		while(ProdAsleep){
-			sleep(5);
-			}
-        }
+        if (c == N) {
+ 		    ProdAsleep = 1;
+			while(ProdAsleep){
+				 sleep(4);
+			    }
+        	}
 
-    buffer[c] = i;
-    c++;
+        buffer[c] = i;
+        c++;
 
-    if (c == 1) {
-        ConsAsleep = 0;
-        }
+        if (c == 1) 
+           	ConsAsleep = 0;
 
-	printf("There is producer working\n");
-	sleep(60);
-	
+      printf("Producer number: %d\n",buffer[c-1]);
   	}
 }
+
 
 
 void *consume(void *argument)
 {
 	int i;
 	while (1) {
-    if (c == 0) {
-	    ConsAsleep = 1;
-		    while(ConsAsleep){
-				sleep(5);
-			}
-	    }
+
+	    if (c == 0) {
+	        ConsAsleep = 1;
+			while(ConsAsleep){
+				sleep(4);
+			    }
+	        }
 	
-	 c--;
-	 i = buffer[c];
+	    c--;
+		i = buffer[c];
 	
-	 if (c + 1 == N) {
-	     ConsAsleep = 0;
-        }
-    }
+	    if (c == N - 1) 
+	       ProdAsleep = 0;
+
+      printf("Consumed number: %d\n",buffer[c]);
+   	 }
 }
-
-
-
 
 int main()
 {
+
 	pthread_t producer, consumer;
-	pthread_create(&producer, NULL, produce, NULL);
-	pthread_create(&consumer, NULL, consume, NULL);
+	int c1 = pthread_create(&producer, NULL, produce, NULL);
+	int c2 = pthread_create(&consumer, NULL, consume, NULL);
 	
-	while(1){
-		fflush(stdout);
-	}
+	if (c1)
+		printf("Error during creating producer thread");
+	if (c2) 
+		printf("Error during creating producer thread");
+
+	while(1){}
 	
 	return 0;
+
 }
