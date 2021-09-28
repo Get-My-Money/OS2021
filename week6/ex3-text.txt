@@ -1,0 +1,10 @@
+P#		AT		BT		CT		TAT		WT
+
+P1		6		4		10		4		0
+P2		4		1		11		7		6
+P3		13		4		17		2		0
+P4		10		2		17		7		5
+P5		10		3		20		10		7
+
+Average Turnaround Time: 6.00000 
+Average WT: 3.200000
