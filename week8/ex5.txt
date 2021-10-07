@@ -1,0 +1,3 @@
+Processes generate virtual memory.
+In most cases, the number of physical memory addresses can be less than the number of virtual memory addresses.
+The pieces of data from virtual memory mapped onto physical memory.

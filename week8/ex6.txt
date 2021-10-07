@@ -1,0 +1,5 @@
+We have: 16-bit virtual addresses, pages - 8 KB.
+8 KB = 8192 B = 2^13 B
+13 bits stored an offset
+16-13 = 3 remaining bits for page number
+Answer: 2^3 = 8 entries
