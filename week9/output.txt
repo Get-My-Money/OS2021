@@ -1,0 +1,11 @@
+Number of hits: 10
+Number of misses: 990
+Hit/Miss ratio: 0.010101
+
+Number of hits: 51
+Number of misses: 949
+Hit/Miss ratio: 0.053741
+
+Number of hits: 94
+Number of misses: 906
+Hit/Miss ratio: 0.103753

@@ -1,0 +1,8 @@
+Results in increasing or decreasing Hit/Miss ratio
+
+We can reach maximum hit/miss ratio, when our sequence looks like:
+a a a ... a, in this case we have hit/miss ratio - (count of numbers - 1),
+so if we have more same numbers, it gives us bigger  hit/miss ratio
+
+We can reach minimum hit/miss ratio, when our sequence looks like:
+a b c d ... z, in this case we have hit/miss ratio - 0, so if we have more different numbers, it gives us lower hit/miss ratio
