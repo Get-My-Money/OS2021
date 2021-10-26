@@ -1,0 +1,9 @@
+-rw-rw-rw- 1 markz runner 4 Oct 26 19:09 _ex3.txt
+-rwxrw-rwx 1 markz runner 4 Oct 26 19:09 _ex3.txt
+-rw-rw---- 1 markz runner 4 Oct 26 19:09 _ex3.txt
+-rwxrwxr-x 1 markz runner 4 Oct 26 19:09 _ex3.txt
+-rwxrwxrwx 1 markz runner 4 Oct 26 19:09 _ex3.txt
+
+660 only owner and the group can read and write the file
+775 all users can read and execute file, but only owner and the group can be modified by others
+777 all users can write, read and execute the file
