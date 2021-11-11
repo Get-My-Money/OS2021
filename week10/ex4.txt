@@ -1,2 +1,0 @@
-link1 tmp/link1 tmp/file1 
-file1 tmp/link1 tmp/file1
